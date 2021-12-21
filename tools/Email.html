@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      h2,
+      h4 {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .grid-master {
+        display: grid;
+        grid-template-columns: repeat(18, 50px);
+        grid-template-rows: repeat(5, 50px);
+      }
+
+      .grid-titulo {
+        grid-column: 7/15;
+        grid-row: 1;
+      }
+
+      .grid-cuerpo {
+        grid-column: 7/15;
+        grid-row: 3;
+      }
+
+      .grid-codigo {
+        grid-row: 4;
+        grid-column: 7/13;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-master">
+      <div class="grid-titulo">
+        <h2>Codigo de Verificacion</h2>
+      </div>
+      <div class="grid-cuerpo">
+        <h4>tu codigo de verificacion es:</h4>
+      </div>
+      <h2 class="grid-codigo">123456</h2>
+    </div>
+  </body>
+</html>
